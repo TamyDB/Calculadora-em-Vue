@@ -33,14 +33,15 @@ const calculateResult = () => {
     <form>
         <input type="number" class="form-control" v-model="state.firstNum" @input="calculateResult">
         <input type="number" class="form-control mt-5" v-model="state.secondNum" @input="calculateResult">
+        <p class="pt-3 text-center">
+            Resultado: {{ state.result }}
+        </p>
         <select class="form-control mt-5 text-center" v-model="state.mathOperation" @change="calculateResult">
             <option value="addition">Adição</option>
             <option value="subtraction">Subtração</option>
             <option value="multiplication">Multiplicação</option>
             <option value="division">Divisão</option>
         </select>
-        <p class="pt-3 text-center">
-            Resultado: {{ state.result }}
-        </p>
+
     </form>
 </template>
