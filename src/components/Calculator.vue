@@ -10,7 +10,7 @@ const state = reactive({
         addition: (x, y) => x + y,
         subtraction: (x, y) => x - y,
         multiplication: (x, y) => x * y,
-        division: (x, y) => (y !== 0 ? x / y : 'Division by zero'),
+        division: (x, y) => (y !== 0 ? x / y : 'Divisão por zero'),
     },
     result: 0,
 })
@@ -42,6 +42,5 @@ const calculateResult = () => {
             <option value="multiplication">Multiplicação</option>
             <option value="division">Divisão</option>
         </select>
-
     </form>
 </template>
